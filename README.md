@@ -9,9 +9,9 @@ SRN is build on Holistically-Nested Edge Detection (HED) [1] with Residual Unit 
 1. Copy folder `SRN` to 'example/' in HED. 
 
 ## Training
-1. Download benchmark **Sym-PASCAL**
+1. Download benchmark **Sym-PASCAL** trainning set
 Our dataset Sym-PASCAL derived from PASCAL 2011 segmentation dataset [1].
-Download：[*(BaiduYun)*](http://pan.baidu.com/s/1jIsJSkm)
+Download：[*(OneDrive)*](https://1drv.ms/u/s!AtLMd2E51FVrhEdSf5u40lnB9SkS) [*(BaiduYun)*](http://pan.baidu.com/s/1jIsJSkm) 
 1. Download the Pre-trained VGG [3] model.
 [*(VGG19)*](https://gist.github.com/ksimonyan/3785162f95cd2d5fee77#file-readme-md)
 Copy it to 'example/SRN/'
