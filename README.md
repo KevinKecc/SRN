@@ -23,8 +23,8 @@ python solver.py
 ```
 
 ## Testing
-1. Change the dataset path in '$HED/example/SRNtest.py'.
-1. run 'SRNtest.py'.
+1. Change the dataset path in `$HED/example/SRNtest.py`.
+1. run `SRNtest.py`.
 
 
 ## Evaluation
