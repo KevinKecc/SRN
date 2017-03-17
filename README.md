@@ -1,12 +1,12 @@
 # SRN
-This code is for the paper "Side-output Residual Network for Object Symmetry Detection in the Wild". [*pdf*](https://arxiv.org/abs/1703.02243)
+This code is for the paper "Side-output Residual Network for Object Symmetry Detection in the Wild". [pdf](https://arxiv.org/abs/1703.02243)
 
 SRN is build on Holistically-Nested Edge Detection (HED) [1] with Residual Unit (RU). RU is used to compute the residual between output image and side-output of SRN.
 
 ## Installing
 1. Install prerequisites for Caffe (http://caffe.berkeleyvision.org/installation.html#prequequisites).
 1. Build HED (https://github.com/s9xie/hed). Supposing the root directory of HED is `$HED`.
-1. Copy the folder `SRN` to '$HED/example/'. 
+1. Copy the folder `SRN` to `$HED/example/`. 
 
 ## Training
 1. Download benchmark **Sym-PASCAL** trainning and testing set:
@@ -28,8 +28,8 @@ python solver.py
 
 
 ## Evaluation
-We use the evaluation code of [3] to draw the PR curve. The code can be download [*(spb-mil)*](https://github.com/tsogkas/spb-mil).
-**NOTE:** Before evaluation, the NMS is utilized. We use the NMS code in Piotr's [*(edges-master)*](https://github.com/pdollar/edges).
+We use the evaluation code of [3] to draw the PR curve. The code can be download [spb-mil](https://github.com/tsogkas/spb-mil).
+**NOTE:** Before evaluation, the NMS is utilized. We use the NMS code in Piotr's [edges-master](https://github.com/pdollar/edges).
 
 ## Pre-trained SRN model on Sym-PASCAL
 Pre-trained SRN model on Sym-PASCAL: [*(OneDrive)*](https://1drv.ms/u/s!AtLMd2E51FVrhR25fGZTs4NbgRXj) or [*(BaiduYun)*](http://pan.baidu.com/s/1c1Rs1xu)
