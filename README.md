@@ -5,7 +5,7 @@ SRN is build on Holistically-Nested Edge Detection (HED) [1] with Residual Unit 
 
 <img src="https://2juhbw-sn3301.files.1drv.com/y4mT44qwVR6EkcDTVOs9MVSArtqSNlqrWTy3KOQaybU2AI1h8MR7NArWo6NH5DpGCo2E3NV3lu_nppbyxXFe61_4TNFoDitPcpGpuydSRXt3s9yoIRpzybSWn38Aj0UayAPNA2jw0FiE_VjzpNbQppqayl_XrMJ_UTxLoHrtekJngNvicKNR4SL1jW35_adVugVF5WxEWn3wiowSshIgF6uDQ?width=1457&height=550&cropmode=none" width="900" height="340" />
 
-From the results, it's easily to understande that the output residual decrease orderly form the deepest side-ouput to the final output. 
+From the results, it's easily to understande that the output residual decreases orderly from the deepest side-ouput to the final output (ringht-to-left). 
 
 ## Installing
 1. Install prerequisites for Caffe (http://caffe.berkeleyvision.org/installation.html#prequequisites).
