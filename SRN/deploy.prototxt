@@ -101,7 +101,7 @@ layer{
   }
 }
 
-# the loss of side output5
+# side output5
 layer { type: "Deconvolution" name: 'upsample_16' bottom: 'score-dsn5-slice2' top: 'concat5-score-up-loss'
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 32 stride: 16 num_output: 1 } }
@@ -135,7 +135,7 @@ layer{
   }
 }
 
-# the loss of side output4
+# side output4
 layer { type: "Deconvolution" name: 'upsample_8' bottom: 'concat4-score-slice2' top: 'concat4-score-up-loss'
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 16 stride: 8 num_output: 1 } }
@@ -168,7 +168,7 @@ layer{
   }
 }
 
-# the loss of side output3
+# side output3
 layer { type: "Deconvolution" name: 'upsample_4' bottom: 'concat3-score-slice2' top: 'concat3-score-up-loss'
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 8 stride: 4 num_output: 1 } }
@@ -191,7 +191,7 @@ layer {
 }
 
 
-# the loss of side output3
+# side output2
 layer { type: "Deconvolution" name: 'upsample_2' bottom: 'concat2-score' top: 'concat2-score-up-loss'
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 4 stride: 2 num_output: 1 } }
