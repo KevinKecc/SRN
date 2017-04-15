@@ -23,7 +23,7 @@ sys.path.insert(0, caffe_root + 'python')
 import caffe
 
 
-data_root = '/root/Workspace/datasets/datasets_original/skelPASCAL/'
+data_root = '../../data/datasets_original/SymPASCAL/'
 with open(data_root+'test.lst') as f:
     test_lst = f.readlines()
 test_lst = [data_root+'/images/test/'+x.strip()+'.jpg' for x in test_lst]
@@ -62,11 +62,25 @@ caffe.set_device(0)
 
 # load net
 model_root = './'
-net = caffe.Net(model_root+'deploy.prototxt', model_root+'srn_iter_15000.caffemodel', caffe.TEST)
+net = caffe.Net(model_root+'deploy.prototxt', model_root+'san_iter_18000.caffemodel', caffe.TEST)
 
 net.blobs['data'].reshape(1, *in_.shape)
 net.blobs['data'].data[...] = in_
 net.forward()
+#out1 = net.blobs['sigmoid-dsn1'].data[0][0,:,:]
+out2 = net.blobs['sigmoid-dsn2'].data[0][0,:,:]
+out3 = net.blobs['sigmoid-dsn3'].data[0][0,:,:]
+out4 = net.blobs['sigmoid-dsn4'].data[0][0,:,:]
+out5 = net.blobs['sigmoid-dsn5'].data[0][0,:,:]
+fuse = net.blobs['sigmoid-fuse'].data[0][0,:,:]
+
+
+scale_lst = [fuse]
+plot_single_scale(scale_lst, 22)
+scale_lst = [out2, out3, out4, out5]
+plot_single_scale(scale_lst, 10)
+show()
+
 
 starttime = datetime.datetime.now()      
 for iidx in range(0, len(test_lst)):

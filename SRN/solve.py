@@ -57,41 +57,8 @@ solver.net.copy_from(base_weights)
 # 1. take SGD steps
 # 2. score the model by the test net `solver.test_nets[0]`
 # 3. repeat until satisfied
-niter = 18000
-test_interval = 200
-train_fuse_loss = np.zeros(niter)
-train_dsn1_loss = np.zeros(niter)
-train_dsn2_loss = np.zeros(niter)
-train_dsn3_loss = np.zeros(niter)
-train_dsn4_loss = np.zeros(niter)
-train_dsn5_loss = np.zeros(niter)
 
 
-test_acc = np.zeros(int(np.ceil(niter / test_interval)))
-
-# the main solver loop
-for it in range(niter):
-    solver.step(1)  # SGD by Caffe
+solver.step(20000)  # SGD by Caffe
     
-    # store the train loss
-    train_fuse_loss[it] = solver.net.blobs['fuse_loss'].data
-    train_dsn1_loss[it] = solver.net.blobs['dsn1_loss'].data
-    train_dsn2_loss[it] = solver.net.blobs['dsn2_loss'].data
-    train_dsn3_loss[it] = solver.net.blobs['dsn3_loss'].data
-    train_dsn4_loss[it] = solver.net.blobs['dsn4_loss'].data
-    train_dsn5_loss[it] = solver.net.blobs['dsn5_loss'].data
-
-scio.savemat('TrainLoss.mat', {'fuse_loss':train_fuse_loss, \
-                               'dsn1_loss':train_dsn1_loss, \
-                               'dsn2_loss':train_dsn2_loss, \
-                               'dsn3_loss':train_dsn3_loss, \
-                               'dsn4_loss':train_dsn4_loss, \
-                               'dsn5_loss':train_dsn5_loss})
-
-
-_, ax1 = plt.subplots()
-ax1.plot(np.arange(niter), train_fuse_loss)
-ax1.set_xlabel('iteration')
-ax1.set_ylabel('train loss')
-plt.show()
-
+   
