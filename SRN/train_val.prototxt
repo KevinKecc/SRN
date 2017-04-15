@@ -228,22 +228,11 @@ layer {
   name: 'cat2-score' type: "Convolution" 
   bottom: 'concat-upscore2' top: 'concat2-score'
   param { lr_mult: 0.05 decay_mult: 1 } param { lr_mult: 0.002 decay_mult: 0}
-  convolution_param { engine: CAFFE num_output: 2 kernel_size: 1  weight_filler {type: "constant" value: 0.25 } } 
-}
-
-layer{
-  type: "Slice" name: "slice2"
-  bottom: "concat2-score"
-  top: "concat2-score-slice1"
-  top: "concat2-score-slice2"
-  slice_param {
-    axis: 1
-    slice_point: 1
-  }
+  convolution_param { engine: CAFFE num_output: 1 kernel_size: 1  weight_filler {type: "constant" value: 0.25 } } 
 }
 
 # the loss of side output2
-layer { type: "Deconvolution" name: 'upsample_2' bottom: 'concat2-score-slice2' top: 'concat2-score-up-loss'
+layer { type: "Deconvolution" name: 'upsample_2' bottom: 'concat2-score' top: 'concat2-score-up-loss'
   param { lr_mult: 0 decay_mult: 1 } param { lr_mult: 0 decay_mult: 0}
   convolution_param { kernel_size: 4 stride: 2 num_output: 1 } }
 layer { type: "Crop" name: 'crop2-loss' bottom: 'concat2-score-up-loss' bottom: 'data' top: 'concat2-score-loss' }
