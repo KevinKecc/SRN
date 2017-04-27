@@ -1,5 +1,5 @@
 MT-SRN is updated from SRN for joint edge and symmetry detection. The architecture is
-
+![MT-SRN](https://zyjmhw-sn3301.files.1drv.com/y4m21xDDP1TtxkIidB-pzp-tSVyKoKOVir2J2kOcd1RcybwesKJiq8_f9bwcYFBswltAcj8QxWs1iofhSmYB1vDLttsNjBZLUrwaZj3fWLSPnCX3qI3zqGX5l3KTeGCTGFhwHQmjyGh6SpshbJdcrtRsprFSw25UnqXAY0fgqWnpLad3otY8D_RKk1JY35S5OKKnHJXIbnwjE0f0_iSaif4LQ?width=2649&height=1261&cropmode=none)
 
 We take alternative training on edge branch and symmetry branch. Interestingly, the performance of joint learned MT-SRN is better than the individual SRN.
 
