@@ -65,7 +65,4 @@ We take alternative training on edge branch and symmetry branch. Interestingly, 
       <td>0.782</td>
       <td>0.453</td>
    </tr>
-   <tr>
-      <td></td>
-   </tr>
 </table>
