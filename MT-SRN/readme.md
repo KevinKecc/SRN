@@ -3,18 +3,13 @@ MT-SRN is updated from SRN for joint edge and symmetry detection. The architectu
 
 We take alternative training on edge branch and symmetry branch. Interestingly, the performance of joint learned MT-SRN is better than the individual SRN.
 
+
 <table>
    <tr>
       <td></td>
       <td>Datasets</td>
-      <td>"ODS</td>
-   </tr>
-   <tr>
-      <td>(edge)"</td>
-      <td>"F-measure</td>
-   </tr>
-   <tr>
-      <td>(symmetry)"</td>
+      <td>ODS (edge)</td>
+      <td>F-measure (symmetry)</td>
    </tr>
    <tr>
       <td>SRN</td>
