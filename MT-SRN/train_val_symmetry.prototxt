@@ -15,7 +15,7 @@ layer {
   }
   image_data_param {
     root_folder: "../../data/SymPASCAL/"
-    source: "../../data/SymPASCAL/train_pair_255_s_1.lst"
+    source: "../../data/SymPASCAL/train_pair.lst"
     batch_size: 1
     shuffle: true
     new_height: 0
@@ -38,7 +38,7 @@ layer {
   }
   image_data_param {
     root_folder: "../../data/SymPASCAL/"
-    source: "../../data/SymPASCAL/train_pair_255_s_1.lst"
+    source: "../../data/SymPASCAL/train_pair.lst"
     #Just setup the network. No real online testing
     batch_size: 1
     shuffle: true
