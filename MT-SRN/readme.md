@@ -50,19 +50,19 @@ We take alternative training on edge branch and symmetry branch. Interestingly, 
    <tr>
       <td></td>
       <td>BSDS500+WHSYMMAX</td>
-      <td>0.776</td>
+      <td>0.779</td>
       <td>0.807</td>
    </tr>
    <tr>
       <td></td>
       <td>BSDS500+SK506</td>
-      <td>0.788</td>
+      <td>0.786</td>
       <td>0.639</td>
    </tr>
    <tr>
       <td></td>
       <td>BSDS500+Sym-PASCAL</td>
-      <td>0.782</td>
+      <td>0.784</td>
       <td>0.453</td>
    </tr>
 </table>
