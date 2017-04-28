@@ -36,7 +36,7 @@ We use the evaluation code of [3] to draw the PR curve. The code can be download
 ## Pre-trained SRN model on Sym-PASCAL
 Pre-trained SRN model on Sym-PASCAL: [*(OneDrive)*](https://1drv.ms/u/s!AtLMd2E51FVrhR25fGZTs4NbgRXj) or [*(BaiduYun)*](http://pan.baidu.com/s/1c1Rs1xu)
 
-## The PR curve data
+## The PR curve data for symmetry detection
 Sym-PASCAL: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhSKfoRdUk7lSPqF7) or [*(BaiduYun)*](http://pan.baidu.com/s/1gf5GYS7)
 
 SYMMAX: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhR8DjbOJtK7YV_tE) or [*(BaiduYun)*](http://pan.baidu.com/s/1i4Rbys9)
@@ -44,6 +44,9 @@ SYMMAX: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhR8DjbOJtK7YV_tE) or [*(B
 WH-SYMMAX: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhR8DjbOJtK7YV_tE) or [*(BaiduYun)*](http://pan.baidu.com/s/1o7UUUk6) mostly taken from http://wei-shen.weebly.com/publications.html
 
 SK506: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhR8DjbOJtK7YV_tE) or [*(BaiduYun)*](http://pan.baidu.com/s/1nuMP0hz) mostly taken from http://wei-shen.weebly.com/publications.html
+
+## The PR curve data for edge detection
+BSDS500: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhiMs1PJcfHb48dbZ)
 
 **Ref**
 
