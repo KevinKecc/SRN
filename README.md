@@ -4,7 +4,7 @@ This code is for the CVPR17 paper "Side-output Residual Network for Object Symme
 
 SRN is build on Holistically-Nested Edge Detection (HED) [1] with Residual Unit (RU). RU is used to compute the residual between output image and side-output of SRN. The comparision of the symmetry results of HED and SRN are shown below. The first row is from our SRN and the second row is from HED. From left to right, it illustrates the final output, the side-output1 to side-output5, respectively. 
 
-<img src="https://onedrive.live.com/?authkey=%21AEA7vs_dqqF-bfs&cid=6B55D4396177CCD2&id=6B55D4396177CCD2%217006&parId=6B55D4396177CCD2%21670&o=OneUp" width="900" height="340" />
+<img src="https://snz04pap002files.storage.live.com/y4m3nM4Dl0DityqC14GZyQ93nO42qIvPIbyXSHPY4ALRtAdy-t6oOSJMqs8XhXVwfgmIqdC9L7ZaUUaR4QVivBcj4eYGyNvPV1uqhZqLYEORYEhLBxXZhLZOigel8jlitnaGjk9RTlWFMcyRQekhRKnbJBTF3lKxyNZzLa20LdeVr4ccvaud45Xnj89H1qACfyK?width=1768&height=978&cropmode=none" width="900" height="340" />
 
 From the results, it's easily to understande that the output residual decreases orderly from the deepest side-ouput to the final output (ringht-to-left). 
 
