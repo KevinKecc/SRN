@@ -45,7 +45,7 @@ SRN model on Sym-PASCAL
 Pre-trained SRN model on Sym-PASCAL: [*(OneDrive)*](https://1drv.ms/u/s!AtLMd2E51FVrhR25fGZTs4NbgRXj) or [*(BaiduYun)*](http://pan.baidu.com/s/1c1Rs1xu)
 
 ## results
-## The PR curve data for symmetry detection
+### The PR curve data for symmetry detection
 Sym-PASCAL: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhSKfoRdUk7lSPqF7) or [*(BaiduYun)*](http://pan.baidu.com/s/1gf5GYS7)
 
 SYMMAX: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhR8DjbOJtK7YV_tE) or [*(BaiduYun)*](http://pan.baidu.com/s/1i4Rbys9)
@@ -54,17 +54,15 @@ WH-SYMMAX: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhR8DjbOJtK7YV_tE) or [
 
 SK506: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhR8DjbOJtK7YV_tE) or [*(BaiduYun)*](http://pan.baidu.com/s/1nuMP0hz) mostly taken from http://wei-shen.weebly.com/publications.html
 
-## The PR curve data for edge detection
+### The PR curve data for edge detection
 BSDS500: [*(OneDrive)*](https://1drv.ms/f/s!AtLMd2E51FVrhiMs1PJcfHb48dbZ)
 
 
-## Repository Contributor
-@KevinKecc
+# Repository Contributor
+Wei Ke ([@KevinKecc](https://github.com/KevinKecc))
 wei.ke@xjtu.edu.cn
 
-## License
-
-## Citation
+# Citation
 @inproceedings{conf/cvpr/KeCJZY17,
   author    = {Wei Ke and Jie Chen and Jianbin Jiao and Guoying Zhao and Qixiang Ye},
   title     = {{SRN:} Side-Output Residual Network for Object Symmetry Detection in the Wild},
