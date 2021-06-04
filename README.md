@@ -1,10 +1,10 @@
-This code is for the CVPR17 paper "Side-output Residual Network for Object Symmetry Detection in the Wild". [pdf](https://openaccess.thecvf.com/content_cvpr_2017/papers/Ke_SRN_Side-output_Residual_CVPR_2017_paper.pdf) and TNNLS paper "SRN: Side-Output Residual Network for Object Reflection Symmetry Detection and Beyond" [pdf](https://ieeexplore.ieee.org/document/9103933).
+This code is for the CVPR17 paper "Side-output Residual Network for Object Symmetry Detection in the Wild" [pdf](https://openaccess.thecvf.com/content_cvpr_2017/papers/Ke_SRN_Side-output_Residual_CVPR_2017_paper.pdf) and TNNLS paper "SRN: Side-Output Residual Network for Object Reflection Symmetry Detection and Beyond" [pdf](https://ieeexplore.ieee.org/document/9103933).
 
 # Introduction
 
 SRN is build on Holistically-Nested Edge Detection (HED) [1] with Residual Unit (RU). RU is used to compute the residual between output image and side-output of SRN. The comparision of the symmetry results of HED and SRN are shown below. The first row is from our SRN and the second row is from HED. From left to right, it illustrates the final output, the side-output1 to side-output5, respectively. 
 
-<img src="https://2juhbw-sn3301.files.1drv.com/y4mT44qwVR6EkcDTVOs9MVSArtqSNlqrWTy3KOQaybU2AI1h8MR7NArWo6NH5DpGCo2E3NV3lu_nppbyxXFe61_4TNFoDitPcpGpuydSRXt3s9yoIRpzybSWn38Aj0UayAPNA2jw0FiE_VjzpNbQppqayl_XrMJ_UTxLoHrtekJngNvicKNR4SL1jW35_adVugVF5WxEWn3wiowSshIgF6uDQ?width=1457&height=550&cropmode=none" width="900" height="340" />
+<img src="https://onedrive.live.com/?authkey=%21AEA7vs_dqqF-bfs&cid=6B55D4396177CCD2&id=6B55D4396177CCD2%217006&parId=6B55D4396177CCD2%21670&o=OneUp" width="900" height="340" />
 
 From the results, it's easily to understande that the output residual decreases orderly from the deepest side-ouput to the final output (ringht-to-left). 
 
